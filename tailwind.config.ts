@@ -19,6 +19,13 @@ export default {
 		},
 		extend: {
 			colors: {
+				// IT-Компот детская цветовая схема
+				'playful-red': '#FF6B6B',
+				'fun-green': '#ECDC4',
+				'sky-blue': '#45B7D1',
+				'magic-purple': '#6C5CE7',
+				'warm-orange': '#FFA726',
+				'cool-gray': '#2D3436',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
@@ -68,7 +75,39 @@ export default {
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
 			},
+			fontFamily: {
+				'comic': ['Comic Neue', 'cursive'],
+				'open': ['Open Sans', 'sans-serif'],
+			},
+			fontFamily: {
+				'comic': ['Comic Neue', 'cursive'],
+				'open': ['Open Sans', 'sans-serif'],
+			},
 			keyframes: {
+				'bounce-gentle': {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-10px)' },
+				},
+				'wiggle': {
+					'0%, 100%': { transform: 'rotate(-3deg)' },
+					'50%': { transform: 'rotate(3deg)' },
+				},
+				'pulse-glow': {
+					'0%, 100%': { boxShadow: '0 0 20px rgba(255, 107, 107, 0.5)' },
+					'50%': { boxShadow: '0 0 40px rgba(255, 107, 107, 0.8)' },
+				},
+				'bounce-gentle': {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-10px)' },
+				},
+				'wiggle': {
+					'0%, 100%': { transform: 'rotate(-3deg)' },
+					'50%': { transform: 'rotate(3deg)' },
+				},
+				'pulse-glow': {
+					'0%, 100%': { boxShadow: '0 0 20px rgba(255, 107, 107, 0.5)' },
+					'50%': { boxShadow: '0 0 40px rgba(255, 107, 107, 0.8)' },
+				},
 				'accordion-down': {
 					from: {
 						height: '0'
@@ -88,7 +127,10 @@ export default {
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'bounce-gentle': 'bounce-gentle 2s ease-in-out infinite',
+				'wiggle': 'wiggle 1s ease-in-out infinite',
+				'pulse-glow': 'pulse-glow 2s ease-in-out infinite'
 			}
 		}
 	},
